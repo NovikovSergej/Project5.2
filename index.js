@@ -4,8 +4,11 @@
 */
 
 const dollarExchangeRate = 26;
+const STEP = 10;
+const MIN_VALUE = 10;
+const MAX_VALUE = 100;
 
-for (let dollars = 10; dollars <= 100; dollars += 10) {
+for (let dollars = MIN_VALUE; dollars <= MAX_VALUE; dollars += STEP) {
   let valueInUAH = dollars * dollarExchangeRate;
   console.log(`${dollars} доларів = ${valueInUAH} гривень`);
 }
